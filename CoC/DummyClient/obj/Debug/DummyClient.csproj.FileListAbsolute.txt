@@ -1,0 +1,6 @@
+D:\Programming\Project\CoC\CoC\DummyClient\bin\Debug\DummyClient.exe.config
+D:\Programming\Project\CoC\CoC\DummyClient\bin\Debug\DummyClient.exe
+D:\Programming\Project\CoC\CoC\DummyClient\bin\Debug\DummyClient.pdb
+D:\Programming\Project\CoC\CoC\DummyClient\obj\Debug\DummyClient.exe
+D:\Programming\Project\CoC\CoC\DummyClient\obj\Debug\DummyClient.pdb
+D:\Programming\Project\CoC\CoC\DummyClient\obj\Debug\DummyClient.csprojResolveAssemblyReference.cache
