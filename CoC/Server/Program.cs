@@ -13,10 +13,10 @@ namespace Server
         static void Main(string[] args)
         {
             //Container for player info
-            Dictionary<Socket, int> playerManager = new Dictionary<Socket, int>();
+            Dictionary<TcpSocket, int> playerManager = new Dictionary<TcpSocket, int>();
 
             //Getting host IP address
-            IPAddress address = IPAddress.Parse("0.0.0.0");
+            IPAddress address = IPAddress.Any;
 
             //Creating IPEndPoint Struct
             //Using 3500 Port... It will be defined by GlobalVariable Class later.
@@ -24,45 +24,39 @@ namespace Server
 
             //Creating listner socket
             //Using 1280 backLog... It will be defined in GlobalVariable Class later.
-            Socket listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            TcpSocket listener = new TcpSocket();
             listener.Bind(localEndPoint);
             listener.Listen(1280);
 
-            //Set non blocking option
-            //listener.Blocking = false;
-            
-            //Loop for Accepting Connection from Client
+
+
+            TcpSocket client = listener.Accept();
+
+            IPEndPoint remoteEndPoint = (IPEndPoint)client.socket.RemoteEndPoint;
+            Console.WriteLine("Connected wirh {0} at port {1}.", remoteEndPoint.Address, remoteEndPoint.Port);
+
+            string welcome = "Welcome to my test server";
+
+            byte[] data = new byte[1024];
+            data = Encoding.ASCII.GetBytes(welcome);
+            client.Send(data);
+
             while (true)
             {
-                try
+                data = new byte[1024];
+                int recv = client.Receive(data);
+                if(recv == 0)
                 {
-                    Socket clientSocket = listener.Accept();
-                    playerManager.Add(clientSocket, clientSocket.Handle.ToInt32());
-                    Console.WriteLine("player{0} connected.", clientSocket.Handle.ToInt32());
-                }
-                catch (SocketException e)
-                {
-                    //Console.WriteLine(e.ToString());
+                    break;
                 }
 
-                foreach(var player in playerManager)
-                {
-                    try
-                    {
-                        StringBuilder data = new StringBuilder("Nice to meet you player");
-                        data.Append(player.Value);
-                        data.Append(".");
-                        byte[] byteData = Encoding.UTF8.GetBytes(data.ToString());
-                        player.Key.Send(byteData);
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e.ToString());
-                    }
-                }
+                Console.WriteLine(Encoding.ASCII.GetString(data, 0, recv));
+                client.Send(data);
             }
-            
 
+            Console.WriteLine("Disconnected from {0}.", remoteEndPoint.Address);
+            client.Close();
+            listener.Close();
         }
     }
 }

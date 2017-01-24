@@ -1,0 +1,12 @@
+D:\Programming\Project\CoC\CoC\Net\bin\Debug\Net.dll
+D:\Programming\Project\CoC\CoC\Net\bin\Debug\Net.pdb
+D:\Programming\Project\CoC\CoC\Net\obj\Debug\Activity1.g.xaml
+D:\Programming\Project\CoC\CoC\Net\obj\Debug\Net_Activity1_BeforeInitializeComponentHelper.txt
+D:\Programming\Project\CoC\CoC\Net\obj\Debug\_Net.g.cs
+D:\Programming\Project\CoC\CoC\Net\obj\Debug\Activity1.g.cs
+D:\Programming\Project\CoC\CoC\Net\obj\Debug\Net_Activity1_BeforeInitializeComponentHelper.cs
+D:\Programming\Project\CoC\CoC\Net\obj\Debug\Net.csproj.XamlGeneratedCodeFileListAbsolute.txt
+D:\Programming\Project\CoC\CoC\Net\obj\Debug\Net.csproj.XamlGeneratedXamlFileListAbsolute.txt
+D:\Programming\Project\CoC\CoC\Net\obj\Debug\Net.dll
+D:\Programming\Project\CoC\CoC\Net\obj\Debug\Net.pdb
+D:\Programming\Project\CoC\CoC\Net\obj\Debug\AC2C1ABA-CCF6-44D4-8127-588FD4D0A860-DeferredValidationErrors.xml

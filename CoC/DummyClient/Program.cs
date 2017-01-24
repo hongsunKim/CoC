@@ -12,14 +12,41 @@ namespace DummyClient
     {
         static void Main(string[] args)
         {
-            Socket playerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+            
+
+            byte[] data = new byte[1024];
+            string input;
+
+            TcpSocket playerSocket = new TcpSocket();
             IPEndPoint remoteEndPoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 3500);
-            playerSocket.Connect(remoteEndPoint);
 
-            byte[] buffer = new byte[256];
-            playerSocket.Receive(buffer);
+            try
+            {
+                playerSocket.Connect(remoteEndPoint);
 
-            Console.WriteLine(Encoding.UTF8.GetString(buffer));
+            } catch (SocketException e)
+            {
+                Console.WriteLine("Unable to connect to server.");
+                Console.WriteLine(e.ToString());
+                return;
+            }
+
+            int recv = playerSocket.Receive(data);
+
+            Console.WriteLine(Encoding.ASCII.GetString(data, 0, recv));
+
+            while (true)
+            {
+                input = Console.ReadLine();
+                if (input == "exit")
+                    break;
+                playerSocket.Send(Encoding.ASCII.GetBytes(input));
+                data = new byte[1024];
+                recv = playerSocket.Receive(data);
+                Console.WriteLine(Encoding.ASCII.GetString(data, 0, recv));
+            }
+
+            Console.WriteLine("Disconnecting from server...");
 
             playerSocket.Shutdown(SocketShutdown.Both);
             playerSocket.Close();
