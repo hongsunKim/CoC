@@ -1,3 +1,0 @@
-obj\Debug\_Net.g.cs
-obj\Debug\Activity1.g.cs
-obj\Debug\Net_Activity1_BeforeInitializeComponentHelper.cs

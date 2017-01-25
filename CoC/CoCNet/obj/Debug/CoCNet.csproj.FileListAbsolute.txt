@@ -1,0 +1,5 @@
+D:\Programming\Project\CoC\CoC\CoCNet\bin\Debug\CoCNet.dll
+D:\Programming\Project\CoC\CoC\CoCNet\bin\Debug\CoCNet.pdb
+D:\Programming\Project\CoC\CoC\CoCNet\obj\Debug\CoCNet.csprojResolveAssemblyReference.cache
+D:\Programming\Project\CoC\CoC\CoCNet\obj\Debug\CoCNet.dll
+D:\Programming\Project\CoC\CoC\CoCNet\obj\Debug\CoCNet.pdb
