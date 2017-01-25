@@ -8,10 +8,13 @@ using System.Net.Sockets;
 
 namespace CoCNet
 {
-    class TcpPacket
+    public class TcpPacket
     {
-        public Socket actor { get; set; }
-        public Socket target { get; set; }
+        public TcpPacketHeader header;
+        public Command command;
 
+        
     }
+
+
 }

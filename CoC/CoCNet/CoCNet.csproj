@@ -40,7 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Data\INFO.cs" />
+    <Compile Include="Data\USER.cs" />
+    <Compile Include="GlobalVariable.cs" />
+    <Compile Include="Protocol.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TcpPacket.cs" />
   </ItemGroup>

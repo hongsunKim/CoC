@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DummyClient", "DummyClient\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoCNet", "CoCNet\CoCNet.csproj", "{A6088CE1-4A05-49CB-B4A2-5E08E75F9AF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{08A55121-482D-4CD6-B053-C1F8C0D57D60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A6088CE1-4A05-49CB-B4A2-5E08E75F9AF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6088CE1-4A05-49CB-B4A2-5E08E75F9AF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6088CE1-4A05-49CB-B4A2-5E08E75F9AF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A55121-482D-4CD6-B053-C1F8C0D57D60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A55121-482D-4CD6-B053-C1F8C0D57D60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A55121-482D-4CD6-B053-C1F8C0D57D60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A55121-482D-4CD6-B053-C1F8C0D57D60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

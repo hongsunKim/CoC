@@ -4,3 +4,5 @@ D:\Programming\Project\CoC\CoC\DummyClient\bin\Debug\DummyClient.pdb
 D:\Programming\Project\CoC\CoC\DummyClient\obj\Debug\DummyClient.exe
 D:\Programming\Project\CoC\CoC\DummyClient\obj\Debug\DummyClient.pdb
 D:\Programming\Project\CoC\CoC\DummyClient\obj\Debug\DummyClient.csprojResolveAssemblyReference.cache
+D:\Programming\Project\CoC\CoC\DummyClient\bin\Debug\CoCNet.dll
+D:\Programming\Project\CoC\CoC\DummyClient\bin\Debug\CoCNet.pdb

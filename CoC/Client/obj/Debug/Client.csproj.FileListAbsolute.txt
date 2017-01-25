@@ -1,0 +1,12 @@
+D:\Programming\Project\CoC\CoC\Client\bin\Debug\Client.exe.config
+D:\Programming\Project\CoC\CoC\Client\bin\Debug\Client.exe
+D:\Programming\Project\CoC\CoC\Client\bin\Debug\Client.pdb
+D:\Programming\Project\CoC\CoC\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+D:\Programming\Project\CoC\CoC\Client\obj\Debug\Client.Properties.Resources.resources
+D:\Programming\Project\CoC\CoC\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+D:\Programming\Project\CoC\CoC\Client\obj\Debug\Client.exe
+D:\Programming\Project\CoC\CoC\Client\obj\Debug\Client.pdb
+D:\Programming\Project\CoC\CoC\Client\obj\Debug\Client.CoCMainForm.resources
+D:\Programming\Project\CoC\CoC\Client\obj\Debug\Client.Login.resources
+D:\Programming\Project\CoC\CoC\Client\bin\Debug\CoCNet.dll
+D:\Programming\Project\CoC\CoC\Client\bin\Debug\CoCNet.pdb
